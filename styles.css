@@ -1,43 +1,9 @@
-/*A diferencia de las variables en preprocesadores como Sass o Less, las Custom Properties de CSS son dinámicas, viven en el navegador y forman parte del DOM. Esto significa que pueden cambiar en tiempo de ejecución, responder a Media Queries e incluso ser manipuladas con JavaScript.  */
-/* Definición */
-:root {
-  --color-brand: #3b82f6;
-  --spacing-unit: 1rem;
+.light {
+  box-sizing: border-box;
 }
 
-/* Uso */
-.button {
-  background-color: var(--color-brand);
-  padding: var(--spacing-unit);
-}
-
-:root {
-  /* Escala de colores */
-  --clr-primary: #2563eb;
-  --clr-bg: #ffffff;
-  --clr-text: #1f2937;
-
-  /* Escala de espaciado (basada en 4 o 8px usualmente) */
-  --space-xs: 0.25rem; /* 4px */
-  --space-sm: 0.5rem;  /* 8px */
-  --space-md: 1rem;    /* 16px */
-  --space-lg: 2rem;    /* 32px */
-
-  /* Tokens de Layout */
-  --container-max-width: 1200px;
-  --grid-gutter: var(--space-md);
-}
-
-:root {
-  --card-bg: #ffffff;
-}
-
-.card {
-  background-color: var(--card-bg);
-  padding: var(--space-md);
-}
-
-/* Sobrescritura local */
-.section-dark {
-  --card-bg: #2d2d2d; /* Solo las .card dentro de .section-dark se verán afectadas */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
